@@ -65,40 +65,42 @@ button {
     box-shadow: 6px rgba(121, 121, 121, 0.65)
 }
 
- button:hover{
+button:hover {
     filter: brightness(140%);
- }
+}
 
- button:active{
+button:active {
     transform: translate(0, 6px);
     box-shadow: 0 3px rgba(255, 255, 255, 0.65);
- }
+}
 
- .twitter-btn:hover{
+.twitter-btn:hover {
     color: #38a1f3;
- }
+}
 
- .fa-twitter{
+.fa-twitter {
     font-size: 24px;
- }
+}
 
- /* Loader */
-.loader{
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid #333;
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
+/* Loader */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light grey */
+    border-top: 16px solid #333;
+    /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(0deg);    
+        transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
-        
     }
 }
 
@@ -106,7 +108,7 @@ button {
 
 
 /* Media Query: Tablet  or Smaller */
-@media (max-width:1000px) {
+@media  screen and (max-width:1000px) {
     .quote-container {
         margin: auto 10px;
     }
