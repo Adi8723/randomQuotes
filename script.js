@@ -6,9 +6,24 @@ const quoteText = document.querySelector('#quote');
 const author = document.querySelector('#author');
 const twitterBtn = document.querySelector('#twitter');
 const newQuoteBtn = document.querySelector('#new-quote');
+const loader = document.querySelector('#loader');
 
 
 let apiQuotes = [];
+
+// showing loading
+
+function loading() {
+    loader.hidden = false
+    quoteContainer = true
+}
+
+// hide loading
+
+function complete() {
+    quoteContainer = false
+    loader.hidden = true
+}
 
 // show new quote
 
@@ -60,4 +75,5 @@ function tweetQuote(){
 newQuoteBtn.addEventListener('click', newQuotes)
 twitterBtn.addEventListener('click', tweetQuote )
 // onload
-getQuotes()
+// getQuotes()
+loading()
